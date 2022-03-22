@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Astrology1"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/astrology_main"
+
+    >
+    
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Astrology"-->
+<!--        android:textColor="@color/purple_200"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="30sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="10"
+        android:padding="20dp"
+        android:weightSum="10"
+        android:background="@drawable/background_astrology"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                >
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="firstName"
+                    android:textColorHint="@color/purple_200"
+                    android:background="@drawable/background_entity"
+                    android:paddingLeft="10dp"
+                    android:drawableLeft="@drawable/account_astrology"
+                    android:drawablePadding="10dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@color/purple_200"
+                    android:id="@+id/astro1_fname"
+
+                    />
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:imeOptions="actionNext"
+                    android:hint="LastName"
+                    android:textColorHint="@color/purple_200"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/background_entity"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/account_astrology"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/purple_200"
+                    android:id="@+id/astro1_lname"
+                    />
+
+
+
+
+            </LinearLayout>
+<!--end of first name and last name-->
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_weight="1"
+            android:hint="Email"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/purple_200"
+            android:background="@drawable/background_entity"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:textColor="@color/purple_200"
+            android:id="@+id/astro1_email"
+
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="PhoneNumber"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/purple_200"
+            android:imeOptions="actionNext"
+            android:background="@drawable/background_entity"
+            android:drawableLeft="@drawable/phone_astrology"
+            android:drawablePadding="10dp"
+            android:inputType="phone"
+            android:textColor="@color/purple_200"
+            android:id="@+id/astro1_number"
+            />
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:imeOptions="actionNext"
+            android:orientation="horizontal"
+            android:id="@+id/astro1_gender"
+            >
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="@color/purple_200"
+                android:background="@drawable/background_entity"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/boy_astrology"
+                android:drawablePadding="10dp"
+                android:id="@+id/astro1_male"
+                android:checked="true"
+
+                />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="FeMale"
+                android:textColor="@color/purple_200"
+                android:background="@drawable/background_entity"
+                android:drawableLeft="@drawable/girl_astrology"
+                android:drawablePadding="10dp"
+                android:id="@+id/astro1_female"
+                android:checked="false"
+                />
+
+        </RadioGroup>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:imeOptions="actionNext"
+            android:background="@drawable/background_entity"
+            android:layout_marginTop="10dp"
+            android:id="@+id/astro1_city"
+
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:imeOptions="actionNext"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/background_entity"
+                android:layout_marginRight="10dp"
+                android:hint="Date of Birth"
+                android:textColorHint="@color/purple_200"
+                android:gravity="center"
+                android:id="@+id/astro1_tdob"
+                android:textColor="@color/purple_200"
+
+                />
+
+            <android.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_entity"
+                android:text="Date"
+                android:textColor="@color/purple_200"
+                android:id="@+id/astro1_dob"
+                />
+<!--            datepicker-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@drawable/background_entity"
+                android:layout_marginRight="10dp"
+                android:hint="Date of Today"
+                android:textColorHint="@color/purple_200"
+                android:gravity="center"
+                android:id="@+id/astro1_tdot"
+                android:textColor="@color/purple_200"
+
+                />
+
+            <android.widget.Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_entity"
+                android:text="Date"
+                android:textColor="@color/purple_200"
+                android:id="@+id/astro1_dot"
+                />
+<!--            datepicker-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:layout_marginTop="10dp"
+            >
+
+
+        <SeekBar
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:outlineAmbientShadowColor="@color/purple_200"
+            android:outlineSpotShadowColor="@color/purple_200"
+            android:background="@drawable/background_entity"
+            android:layout_marginRight="10dp"
+            android:id="@+id/astro1_seekbar"
+            android:min="500"
+            android:max="1200"
+
+            />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/background_entity"
+                android:text="Price"
+                android:textColor="@color/purple_200"
+                android:gravity="center"
+                android:id="@+id/astro1_seekbart"
+                />
+        </LinearLayout>
+<!--        seekbar-->
+
+
+<!--        rating bar for feedback-->
+
+        <RatingBar
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:theme="@style/Animation.Design.BottomSheetDialog"
+            android:id="@+id/astro1_ratingbar"
+            />
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:backgroundTint="@color/purple_200"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:id="@+id/astrology_signbtn"
+            />
+<!--        submit button-->
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
