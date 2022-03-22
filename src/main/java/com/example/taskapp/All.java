@@ -21,7 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class All extends AppCompatActivity {
-    Button youtube,camera,click_image,click_gallery,click_alert,click_custom_alert,btn_click_custom_btn,click_custom_toast;
+    Button youtube,camera,click_image,click_gallery,click_alert,click_custom_alert,btn_click_custom_btn,click_custom_toast,click_date_picker,click_time_picker;
     TextView fname_custom_alert;
     ImageView imageView;
     String email;
@@ -37,6 +37,9 @@ public class All extends AppCompatActivity {
         click_alert=findViewById(R.id.click_alert);
         click_custom_alert=findViewById(R.id.click_custom_alert);
         click_custom_toast=findViewById(R.id.click_custom_toast);
+        click_date_picker=findViewById(R.id.click_date_picker);
+        click_time_picker=findViewById(R.id.click_time_picker);
+
 
         youtube.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +61,7 @@ public class All extends AppCompatActivity {
             public void onClick(View view) {
                 imageView.setImageResource(R.drawable.astrology_img);
             }
-        });//click evert and get image directly using drawable folder image
+        });//click evert and get image directly using drawable folder image(write onclick function in xml or java code)
         click_gallery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -151,6 +154,24 @@ public class All extends AppCompatActivity {
             }
         });
 
+        //datapicker
+        click_date_picker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(All.this,DataPicker_all.class);
+                startActivity(i);
+            }
+        });
+
+        //timepicker
+        click_time_picker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(All.this,TimePicker_all.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override
@@ -186,7 +207,7 @@ public class All extends AppCompatActivity {
             }
         });
         builder.show();
-    }
+    }//on backspace generally do for to backspace on the window then show alert at the last page of activity
 
     //    public void click_alert(View view){
 //        AlertDialog.Builder builder=new AlertDialog.Builder(this);

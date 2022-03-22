@@ -9,6 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taskapp">
         <activity
+            android:name=".TimePicker_all"
+            android:exported="false" />
+        <activity
+            android:name=".DataPicker_all"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavigation"
             android:exported="false"
             android:label="@string/title_activity_tabbed_activitybasic"
